@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TGMEET - The TG community for trans people and lovers to meet</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #fff; color: #333; }
+
+    header {
+      position: relative;
+      height: 100vh;
+      background: url('./hero.jpg') center center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      padding: 20px;
+    }
+
+    h1 { font-size: 3rem; margin-bottom: 1rem; }
+    p { font-size: 1.3rem; margin-bottom: 1.5rem; }
+
+    a.button {
+      background-color: #ff4081;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+      display: inline-block;
+    }
+
+    a.button:hover { background-color: #e91e63; }
+
+    /* App Store buttons */
+    .app-buttons{
+      margin-top: 8px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+    }
+
+    .store-btn{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      background: #000;
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      min-width: 170px;
+      transition: all .25s ease;
+    }
+
+    .store-btn:hover{
+      background: #fff;
+      color: #000;
+    }
+
+    .store-btn .icon{
+      font-size: 26px;
+      line-height: 1;
+    }
+
+    .store-btn .text{
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+      text-align: left;
+    }
+
+    .store-btn small{
+      font-size: 11px;
+      font-weight: 400;
+    }
+
+    .store-btn strong{
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    @media(max-width:768px){
+      .app-buttons{
+        flex-direction: column;
+        align-items: center;
+      }
+      .store-btn{
+        width: 210px;
+        justify-content: center;
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      font-size: 0.9rem;
+      background: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero-content">
+      <h1>TGmeet - Where Trans People Meet Love</h1>
+      <p>
+        Meet amazing transgender women looking for real connection!
+        Join now for free, connect instantly, and start meeting incredible people today!
+      </p>
+
+      <a href="https://www.bicupid.com/registerStep1?tid=af100017352_TT8" class="button">Join Now</a>
+
+      <div class="app-buttons">
+        <a href="https://apps.apple.com/us/app/apple-store/id375380948" class="store-btn apple" target="_blank">
+          <span class="icon"></span>
+          <span class="text">
+            <small>Download on the</small>
+            <strong>App Store</strong>
+          </span>
+        </a>
+
+        <a href="https://play.google.com/store" class="store-btn google" target="_blank">
+          <span class="icon">▶</span>
+          <span class="text">
+            <small>Get it on</small>
+            <strong>Google Play</strong>
+          </span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <footer>
+    © 2025 TGMEET.com All Rights Reserved.
+  </footer>
+</body>
+</html>
